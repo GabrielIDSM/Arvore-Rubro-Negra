@@ -67,14 +67,14 @@ void ArvoreRubroNegra::girarDir(No*& ptr) {
 
 
 void ArvoreRubroNegra::inserir(int n) {
-    No* node = new No(n);
-    raiz = inserirArvore(raiz, node);
-    corrigirInserir(node);
+    No* no = new No(n);
+    raiz = inserirArvore(raiz, no);
+    corrigirInserir(no);
 }
 
 void ArvoreRubroNegra::deletar(int dado) {
-    No* node = deletarArvore(raiz, dado);
-    corrigirDeletar(node);
+    No* no = deletarArvore(raiz, dado);
+    corrigirDeletar(no);
 }
 
 int ArvoreRubroNegra::obterAlturaNegra(No* no) {
