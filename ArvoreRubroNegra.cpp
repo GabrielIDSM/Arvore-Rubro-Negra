@@ -318,8 +318,8 @@ void ArvoreRubroNegra::preOrdemArvore(No*& ptr) {
         return;
 
     printf("[%d] ", ptr->dado);
-    emOrdemArvore(ptr->esq);
-    emOrdemArvore(ptr->dir);
+    preOrdemArvore(ptr->esq);
+    preOrdemArvore(ptr->dir);
 }
 
 void ArvoreRubroNegra::preOrdem() {
